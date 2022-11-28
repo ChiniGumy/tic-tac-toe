@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.game-container {
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.game-container h1{
+	margin-bottom: 50px;
+
+}
+
+.board {
+	background-color: black;
+	gap: 3px;
+	display: grid;
+	width: 700px;
+	height: 700px;
+	grid-template-columns: auto auto auto;
+}	
+
+.game-button {
+	min-width: 50px;
+	min-height: 50px;
+	border: 0;
+	color: rgb(71, 64, 255);
+	background-color: #ffffff ;
+	font-size: 32px;
+}
+
+#reset-button {
+	cursor: pointer;
+	margin-top: 30px;
+	width: 250px;
+	height: 45px;
+}

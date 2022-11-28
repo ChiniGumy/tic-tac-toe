@@ -26,6 +26,7 @@
 }	
 
 .game-button {
+	cursor: pointer;
 	min-width: 50px;
 	min-height: 50px;
 	border: 0;

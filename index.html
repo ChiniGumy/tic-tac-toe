@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Tic Tac Toe</title>
 </head>
 <body>
 	
 	<div class="game-container">
+		<h2 id="winner-title">TIC TAC TOE</h2>
 		<div class="board">
 			<button class="game-button" id="0" onclick="drawFigure(event), determineWinner(event)"></button>
 			<button class="game-button" id="1" onclick="drawFigure(event), determineWinner(event)"></button>

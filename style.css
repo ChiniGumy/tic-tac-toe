@@ -3,6 +3,22 @@
 	padding: 0;
 }
 
+:root {
+	--black : #111111;
+	--white : #bbbbbb;
+	--gray : #bebebe;
+	--red-error: #ff301e;
+	--dark-gray: #252525;
+
+	--red : #f94040;
+	--blue : #3e58ff;
+}
+
+body {
+	background-color: var(--dark-gray);
+	font-family: 'Roboto', sans-serif;
+}
+
 .game-container {
 	height: 100vh;
 	flex-direction: column;
@@ -11,33 +27,39 @@
 	justify-content: center;
 }
 
-.game-container h1{
-	margin-bottom: 50px;
-
-}
-
 .board {
-	background-color: black;
+	background-color: var(--gray);
 	gap: 3px;
 	display: grid;
-	width: 700px;
-	height: 700px;
+	width: 600px;
+	height: 600px;
 	grid-template-columns: auto auto auto;
 }	
 
 .game-button {
+	color: var(--white);
 	cursor: pointer;
 	min-width: 50px;
 	min-height: 50px;
 	border: 0;
-	color: rgb(71, 64, 255);
-	background-color: #ffffff ;
-	font-size: 32px;
+	background-color: var(--dark-gray);
+	font-size: 42px;
+	font-weight: 450;
 }
 
 #reset-button {
+	border-radius: 15px;
+	border: 0px;
+	font-size: 20px;
 	cursor: pointer;
-	margin-top: 30px;
+	margin-top: 40px;
 	width: 250px;
 	height: 45px;
+}
+
+#winner-title {
+	color: white;
+	position: static;
+	font-size: 36px;
+	margin-bottom: 60px;
 }

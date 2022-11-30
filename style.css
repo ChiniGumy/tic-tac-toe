@@ -6,12 +6,13 @@
 :root {
 	--black : #111111;
 	--white : #bbbbbb;
+	--white-hover : #bdbdbd;
 	--gray : #bebebe;
-	--red-error: #ff301e;
-	--dark-gray: #252525;
+	--red-error: #ff4f3e;
+	--dark-gray: #333333;
 
-	--red : #f94040;
-	--blue : #3e58ff;
+	--red : #fb3e34;
+	--blue : #48b0ff;
 }
 
 body {
@@ -48,17 +49,22 @@ body {
 }
 
 #reset-button {
-	border-radius: 15px;
+	border-radius: 20px;
 	border: 0px;
 	font-size: 20px;
 	cursor: pointer;
 	margin-top: 40px;
-	width: 250px;
+	width: 100px;
 	height: 45px;
+	transition: 300ms all;
+}
+
+#reset-button:hover {
+	background-color: var(--white-hover);
 }
 
 #winner-title {
-	color: white;
+	color: #fff;
 	position: static;
 	font-size: 36px;
 	margin-bottom: 60px;

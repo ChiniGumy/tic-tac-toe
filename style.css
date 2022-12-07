@@ -48,14 +48,26 @@ body {
 	font-weight: 450;
 }
 
+.menu {
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	margin-top: 45px;
+	display: inline-flex;
+}
+
+.menu label {
+	margin: 0 70px;
+}
+
 #reset-button {
 	border-radius: 20px;
 	border: 0px;
 	font-size: 20px;
 	cursor: pointer;
-	margin-top: 40px;
 	width: 100px;
 	height: 45px;
+	margin-left: 80px;
 	transition: 300ms all;
 }
 
@@ -68,4 +80,17 @@ body {
 	position: static;
 	font-size: 36px;
 	margin-bottom: 60px;
+}
+
+#x-wins, #o-wins {
+	font-size: 42px;
+	color: var(--white);
+}
+
+#x-wins span{
+	color: var(--red);
+}
+
+#o-wins span{
+	color: var(--blue);
 }
